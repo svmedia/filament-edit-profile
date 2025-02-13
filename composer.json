@@ -1,5 +1,5 @@
 {
-    "name": "svmedia/filament-edit-profile",
+    "name": "joaopaulolndev/filament-edit-profile",
     "description": "Filament package to edit profile",
     "keywords": [
         "joaopaulolndev",
@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "svmedia\\FilamentEditProfile\\": "src/",
-            "svmedia\\FilamentEditProfile\\Database\\Factories\\": "database/factories/"
+            "Joaopaulolndev\\FilamentEditProfile\\": "src/",
+            "Joaopaulolndev\\FilamentEditProfile\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "svmedia\\FilamentEditProfile\\Tests\\": "tests/"
+            "Joaopaulolndev\\FilamentEditProfile\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "svmedia\\FilamentEditProfile\\FilamentEditProfileServiceProvider"
+                "Joaopaulolndev\\FilamentEditProfile\\FilamentEditProfileServiceProvider"
             ],
             "aliases": {
-                "FilamentEditProfile": "svmedia\\FilamentEditProfile\\Facades\\FilamentEditProfile"
+                "FilamentEditProfile": "Joaopaulolndev\\FilamentEditProfile\\Facades\\FilamentEditProfile"
             }
         }
     },
