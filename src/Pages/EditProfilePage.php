@@ -11,8 +11,6 @@ class EditProfilePage extends Page
 
     protected static ?string $slug = 'edit-profile';
 
-    protected static bool $shouldRegisterNavigation = false;
-
     public static function getSlug(): string
     {
         $plugin = Filament::getCurrentPanel()?->getPlugin('filament-edit-profile');

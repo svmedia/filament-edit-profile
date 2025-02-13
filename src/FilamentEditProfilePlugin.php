@@ -21,7 +21,7 @@ class FilamentEditProfilePlugin implements Plugin
 
     public Closure | bool $access = true;
 
-    public Closure | bool $shouldRegisterNavigation = true;
+    public Closure | bool $shouldRegisterNavigation = false;
 
     public Closure | int $sort = 90;
 
@@ -55,8 +55,6 @@ class FilamentEditProfilePlugin implements Plugin
     protected array | string $avatarRules = ['max:1024'];
 
     protected array $registeredCustomProfileComponents = [];
-
-    protected static bool $shouldRegisterNavigation = false;
 
     public function getId(): string
     {
