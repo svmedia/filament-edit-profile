@@ -28,7 +28,7 @@ class EditProfileForm extends BaseProfileForm
 
         $this->userClass = get_class($this->user);
 
-        $this->form->fill($this->user->only(config('filament-edit-profile.avatar_column', 'avatar_url'), 'name', 'email'));
+        $this->form->fill($this->user->only(config('filament-edit-profile.avatar_column', 'avatar_url'), 'first_name', 'last_name', 'email'));
     }
 
     public function form(Form $form): Form
