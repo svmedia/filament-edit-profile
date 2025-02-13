@@ -37,6 +37,7 @@ class FilamentEditProfilePlugin implements Plugin
 
     public bool $shouldShowEditProfileForm = true;
 
+
     public bool $shouldShowEditPasswordForm = true;
 
     public Closure | bool $shouldShowDeleteAccountForm = true;
@@ -54,6 +55,8 @@ class FilamentEditProfilePlugin implements Plugin
     protected array | string $avatarRules = ['max:1024'];
 
     protected array $registeredCustomProfileComponents = [];
+
+    protected static bool $shouldRegisterNavigation = false;
 
     public function getId(): string
     {
