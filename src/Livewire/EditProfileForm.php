@@ -48,8 +48,11 @@ class EditProfileForm extends BaseProfileForm
                             ->directory(filament('filament-edit-profile')->getAvatarDirectory())
                             ->rules(filament('filament-edit-profile')->getAvatarRules())
                             ->hidden(! filament('filament-edit-profile')->getShouldShowAvatarForm()),
-                        TextInput::make('name')
-                            ->label(__('filament-edit-profile::default.name'))
+                        TextInput::make('first_name')
+                            ->label(__('filament-edit-profile::default.first_name'))
+                            ->required(),
+                        TextInput::make('last_name')
+                            ->label(__('filament-edit-profile::default.last_name'))
                             ->required(),
                         TextInput::make('email')
                             ->label(__('filament-edit-profile::default.email'))
